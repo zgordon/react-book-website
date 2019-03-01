@@ -1,0 +1,14 @@
+section {
+  padding: 2rem 0
+}
+
+#what-you-will-learn li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+#how-you-will-learn h3 {
+  margin: 1rem 0 2rem;
+}
+#how-you-will-learn strong {
+  font-weight: normal
+}

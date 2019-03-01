@@ -25,6 +25,32 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+
+          // script={[
+          //   {
+          //     type: 'text/javascript',
+          //     url: '',
+          //     id: 'snipcart',
+          //     'data-api-key':
+          //       'YjdiNWIyOTUtZTIyMy00MWMwLTkwNDUtMzI1M2M2NTgxYjE0',
+          //     src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
+          //   },
+          //   {
+          //     type: 'text/javascript',
+          //     src:
+          //       'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
+          //   },
+          // ]}
+          // script={[
+          //   {
+          //     src: 'https://gumroad.com/js/gumroad.js',
+          //     type: 'text/javascript',
+          //   },
+          //   {
+          //     src: 'https://gumroad.com/js/gumroad-embed.js',
+          //     type: 'text/javascript',
+          //   },
+          // ]}
         >
           <html lang="en" />
         </Helmet>

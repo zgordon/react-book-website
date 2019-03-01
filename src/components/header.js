@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#363A45',
       marginBottom: '1.45rem',
     }}
   >
@@ -23,7 +23,18 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          {siteTitle}{' '}
+          <span
+            style={{
+              marginTop: '1rem',
+              display: 'block',
+              fontWeight: 'normal',
+              fontSize: '1rem',
+              verticalAlign: 'middle',
+            }}
+          >
+            A Book from Educator Zac Gordon
+          </span>
         </Link>
       </h1>
     </div>
