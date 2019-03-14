@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Flex, Box } from '@rebass/grid'
-import { Card, Heading, Text, Button } from 'rebass'
-
-import Script from 'react-load-script'
+import { Card, Heading, Text } from 'rebass'
+import AmazonButton from './AmazonButton'
+import bookBlur from '../images/book-blur.png'
 
 const colors = {
   dark: '#363A45',
@@ -17,16 +17,22 @@ class PricingTable extends Component {
         <Heading as="h2" fontSize={[3, 4, 5]} textAlign="center" my="2rem">
           Get the Book
         </Heading>{' '}
-        <Flex
+        <Card
           flexWrap="wrap"
           flexDirection="row"
           p="3rem"
-          css={{
-            // backgroundColor: '#FFF5A9',
-            backgroundColor: colors.dark,
-          }}
+          className="pricing-block"
+          // backgroundImage={`url(${bookBlur})`}
+          // backgroundSize="cover"
+          // backgroundPosition="bottom"
+          css={
+            {
+              // backgroundColor: '#FFF5A9',
+              // backgroundColor: colors.dark,
+            }
+          }
         >
-          <Box
+          {/* <Box
             width={[1, 1 / 3]}
             p="1rem"
             css={{
@@ -52,35 +58,29 @@ class PricingTable extends Component {
                 Buy Now $14
               </a>
             </Card>
-          </Box>
+          </Box> */}
           <Box
-            width={[1, 1 / 3]}
+            width={[1, 1 / 2]}
             my="-1rem"
             p="1rem"
             css={{
               backgroundColor: '#fff',
-              border: `5px ${colors.dark} solid`,
+              // border: `5px ${colors.dark} solid`,
+              margin: `0 auto`,
             }}
           >
             <Card>
               <Heading as="h3" mb="1rem" textAlign="center">
-                Print
+                Print &amp; Kindle Versions
               </Heading>
               <Text my="1rem" fontSize={[1, 2]}>
-                Get the print version of the book shipped to you via Amazon.
-                Code included.
+                Both the paperback, print version of the book and the Kindle
+                version are available via the link below on Amazon.
               </Text>
-              <Button
-                bg={colors.dark}
-                borderRadius="0"
-                mx="auto"
-                css={{ display: 'block' }}
-              >
-                Buy on Amazon
-              </Button>
+              <AmazonButton style={{ margin: `0 auto`, display: 'block' }} />
             </Card>
           </Box>
-          <Box
+          {/* <Box
             width={[1, 1 / 3]}
             p="1rem"
             css={{
@@ -100,8 +100,8 @@ class PricingTable extends Component {
                 Coming Soon.
               </Text>
             </Card>
-          </Box>
-        </Flex>
+          </Box> */}
+        </Card>
       </>
     )
   }

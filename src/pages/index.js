@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
-import { Heading } from 'rebass'
+import { Heading, Image, Text } from 'rebass'
 import Layout from '../components/layout'
 import coverImg from '../images/cover.jpg'
 import plusImg from '../images/plus.png'
@@ -9,6 +9,7 @@ import zacImg from '../images/zac-cropped.jpg'
 
 import PricingTable from '../components/pricing-table'
 import TOC from '../components/toc'
+import AmazonButton from '../components/AmazonButton'
 
 import './index.css'
 
@@ -24,10 +25,9 @@ const IndexPage = () => (
         <Box width={[1, 2 / 3]}>
           <Heading
             as="h2"
-            m="8rem 0 4rem"
+            m="5rem 0 2rem"
             style={{
               fontWeight: 'normal',
-
               fontSize: '2rem',
               lineHeight: '2.6rem',
             }}
@@ -38,11 +38,7 @@ const IndexPage = () => (
             <br />
             <em style={{ fontStyle: 'normal' }}>&amp; Guided Practice</em>
           </Heading>
-          {/* <p class="description" style={{ fontSize: '1.4rem', lineHeight: '2rem' }}>
-      Learn the popular JavaScript library, React, with in depth explanations
-      and tons of practice exercises.
-    </p> */}
-          {/* {amazonLink} */}
+          <AmazonButton style={{ fontSize: '1.2rem' }} />
         </Box>
         <Box width={[1, 1 / 3]}>
           <img
@@ -100,7 +96,7 @@ const IndexPage = () => (
             </strong>
           </p>
         </Box>
-        <Box p="2rem" width={[1, 1 / 3]}>
+        <Box p="1rem" width={[1, 1 / 3]}>
           <h3>
             <span aria-label="brain icon" role="img">
               🧠
@@ -119,25 +115,37 @@ const IndexPage = () => (
       <hr />
       <TOC />
       <PricingTable />
-      <Flex>
-        <Box>
-          <img
-            style={{ maxWidth: '200px', float: 'left', margin: '10px' }}
+
+      <Flex id="author" my="4rem" flexWrap="wrap" flexDirection="row">
+        <Box width={[1, 1 / 3]}>
+          <Image
             className="cover"
             src={zacImg}
             alt="React Explained Book Cover"
+            width={[1]}
           />
         </Box>
-        <Box>
-          <Heading as="h2">About the Author</Heading>
-          <p />
+        <Box width={[1, 2 / 3]} p="1rem">
+          <Heading as="h2" fontSize={[3, 4, 5]}>
+            About the Author
+          </Heading>
+          <Text my="1rem" fontSize={[1, 3]} lineHeight={[1, 1.4]}>
+            <a href="https://zacgordon.com/">Zac Gordon</a> is a professional
+            educator, with a current focus on JavaScript development with and
+            alongside WordPress at{' '}
+            <a href="https://javascriptforwp.com">javascriptforwp.com</a>. Zac
+            has years of experience teaching at high schools, colleges,
+            bootcamps and online learning sites like Treehouse, Udemy and
+            Frontend Masters. In addition to teaching, Zac also runs Web Hosting
+            for Students, one of the world’s largest hosting companies dedicated
+            to students and teachers. You can also catch his free Office Yoga
+            sessions on <a href="https://OfficeYoga.tv">OfficeYoga.tv</a>.
+          </Text>
+          <Text>
+            <a href="https://twitter.com/zgordon">Follow Zac on Twitter</a>.
+          </Text>
         </Box>
       </Flex>
-      <h2>Get the Book</h2>
-      <p>
-        You can purchase the print and digital versions of the book through
-        Amazon.com
-      </p>
     </Layout>
   </ThemeProvider>
 )

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box } from '@rebass/grid'
-import { Card, Heading, Text, Image } from 'rebass'
+// import { Box } from '@rebass/grid'
+import { Heading } from 'rebass'
 
 const ProjectChapter = ({ number, title }) => (
   <Heading as="h4" fontSize={[1, 2]} mb="1rem" css={{ fontWeight: 'normal' }}>

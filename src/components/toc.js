@@ -1,10 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import { Card, Heading, Text, Image } from 'rebass'
 import appDemo from '../images/app-demo.gif'
-import jsDemo from '../images/JS-Practice.gif'
-import reactDemo from '../images/React-Chapters-Demo.gif'
+import jsDemo from '../images/part-1.png'
+import reactDemo from '../images/part-2.png'
 import reactLogo from '../images/react.png'
 import reactRouterLogo from '../images/react-router.png'
 import firebaseLogo from '../images/firebase.png'
@@ -132,17 +132,17 @@ const chapters = {
 
 const TOC = props => (
   <>
-    <Heading as="h2" fontSize={[3, 4, 5]} textAlign="center" mt="4rem">
+    <Heading as="h2" fontSize={[3, 4, 5]} textAlign="center" mt="6rem">
       Table of Contents
     </Heading>
-    <Heading as="h3" my="2rem" fontSize={[3, 4]} textAlign="center" mt="4rem">
+    <Heading as="h3" mt="6rem" mb="2rem" fontSize={[3, 4]} textAlign="center">
       Part 1 - Preparing to React
     </Heading>
     <Image
       width={[1, 2 / 3]}
       src={jsDemo}
-      m="0 auto 2rem"
-      css={{ display: 'block', boxShadow: '0 0 8px rgba(0, 0, 0, .25)' }}
+      m="3rem auto"
+      css={{ display: 'block' }}
     />
     <Text
       size={['1']}
@@ -158,14 +158,14 @@ const TOC = props => (
         <Chapter {...chapter} />
       ))}
     </Flex>
-    <Heading as="h3" my="2rem" fontSize={[3, 4]} textAlign="center" mt="4rem">
+    <Heading as="h3" mt="6rem" mb="2rem" fontSize={[3, 4]} textAlign="center">
       Part 2 - React Explained
     </Heading>
     <Image
       width={[1, 2 / 3]}
       src={reactDemo}
-      m="0 auto 2rem"
-      css={{ display: 'block', boxShadow: '0 0 8px rgba(0, 0, 0, .25)' }}
+      m="3rem auto"
+      css={{ display: 'block' }}
     />
     <Text
       size={['1']}
@@ -183,13 +183,13 @@ const TOC = props => (
       ))}
     </Flex>
     <Box />
-    <Heading as="h3" my="3rem" fontSize={[3, 4]} textAlign="center">
+    <Heading as="h3" mt="6rem" mb="2rem" fontSize={[3, 4]} textAlign="center">
       Part 3 - A React Project
     </Heading>
     <Image
       width={[1, 2 / 3]}
       src={appDemo}
-      m="0 auto 2rem"
+      m="3rem auto"
       css={{ display: 'block', boxShadow: '0 0 8px rgba(0, 0, 0, .25)' }}
     />
     <Text
@@ -228,6 +228,7 @@ const TOC = props => (
       flexWrap="wrap"
       flexDirection="row"
       css={{ boxShadow: '0 0 8px rgba(0, 0, 0, .25)' }}
+      mb="6rem"
     >
       <Box width={[1, 1 / 3]}>
         <Card m="1" p="2rem">

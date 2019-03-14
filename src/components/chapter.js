@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@rebass/grid'
-import { Card, Heading, Text, Image } from 'rebass'
+import { Card, Heading, Text } from 'rebass'
 
 const Chapter = ({ number, title, description }) => (
   <Box width={[1, 1 / 3]}>

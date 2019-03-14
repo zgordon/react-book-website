@@ -3,8 +3,8 @@ import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
   <div
+    className="wrapper"
     style={{
-      background: '#363A45',
       marginBottom: '1.45rem',
     }}
   >
