@@ -644,6 +644,9 @@ a {
   color: #363a45;
   text-decoration: underline
 }
+a.btn.btn-primary {
+  border-radius: none;
+}
 @media only screen and (max-width: 780px) {
   div.featured {
     margin: 2rem 0;
