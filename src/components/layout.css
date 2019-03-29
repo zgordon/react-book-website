@@ -638,12 +638,14 @@ pre tt:after {
   color: #363a45;
   text-decoration: underline
 }
+@media only screen and (max-width: 780px) {
+  div.featured {
+    margin: 2rem 0;
+  }
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
-  }
-  div.featured {
-    margin: 2rem 0;
   }
   div.step {
     margin:  0;

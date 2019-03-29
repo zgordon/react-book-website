@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 
-const injectTwitterScript = () => {
+const injectPodiaScript = () => {
   function addJS(jsCode) {
     var s = document.createElement(`script`)
 
@@ -16,10 +16,10 @@ const injectTwitterScript = () => {
     document.getElementsByTagName(`head`)[0].appendChild(s)
   }
   addJS(`
-    window.twttr = (function(d, s, id) {
+    window.podia = (function(d, s, id) {
       var js,
         fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
+        t = window.podia || {};
       if (d.getElementById(id)) return t;
       js = d.createElement(s);
       js.id = id;
@@ -36,22 +36,22 @@ const injectTwitterScript = () => {
 
 let injectedTwitterScript = false
 
-const embedClasses = [`.podia-button`].join(`,`)
+const embedClasses = [`a[data-podia-embed="button"]`].join(`,`)
 exports.onRouteUpdate = () => {
   // If there's an embedded element, lazy-load the twitter script (if it hasn't
   // already been loaded), and then run the twitter load function.
   if (document.querySelector(embedClasses) !== null) {
     if (!injectedTwitterScript) {
-      injectTwitterScript()
+      injectPodiaScript()
       injectedTwitterScript = true
     }
 
     if (
-      typeof twttr !== `undefined` &&
-      window.twttr.widgets &&
-      typeof window.twttr.widgets.load === `function`
+      typeof podia !== `undefined` &&
+      window.podia.widgets &&
+      typeof window.podia.widgets.load === `function`
     ) {
-      window.twttr.widgets.load()
+      window.podia.widgets.load()
     }
   }
 }

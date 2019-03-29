@@ -33,7 +33,7 @@ class PricingTable extends Component {
           }
         >
           <Box
-            width={[1, 1 / 3]}
+            width={[1, 1, 1 / 3]}
             p="2rem 1rem 1rem"
             css={{
               backgroundColor: '#fff',
@@ -64,7 +64,7 @@ class PricingTable extends Component {
           <Box
             m={`-1rem 0`}
             className="featured"
-            width={[1, 1 / 3]}
+            width={[1, 1, 1 / 3]}
             css={{
               backgroundColor: '#fff',
               border: `5px ${colors.dark} solid`,
@@ -104,7 +104,7 @@ class PricingTable extends Component {
             </Card>
           </Box>
           <Box
-            width={[1, 1 / 3]}
+            width={[1, 1, 1 / 3]}
             p="2rem 1rem 1rem"
             css={{
               backgroundColor: '#fff',
