@@ -25,7 +25,6 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-
           // script={[
           //   {
           //     type: 'text/javascript',
@@ -41,16 +40,13 @@ const Layout = ({ children }) => (
           //       'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
           //   },
           // ]}
-          // script={[
-          //   {
-          //     src: 'https://gumroad.com/js/gumroad.js',
-          //     type: 'text/javascript',
-          //   },
-          //   {
-          //     src: 'https://gumroad.com/js/gumroad-embed.js',
-          //     type: 'text/javascript',
-          //   },
-          // ]}
+          script={[
+            {
+              src: 'https://cdn.podia.com/embeds.js',
+              type: 'text/javascript',
+              async: 'async',
+            },
+          ]}
         >
           <html lang="en" />
         </Helmet>

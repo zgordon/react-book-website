@@ -9,9 +9,10 @@ import zacImg from '../images/zac-cropped.jpg'
 
 import PricingTable from '../components/pricing-table'
 import TOC from '../components/toc'
-import AmazonButton from '../components/AmazonButton'
+// import AmazonButton from '../components/AmazonButton'
 
 import './index.css'
+import AmazonButton from '../components/AmazonButton'
 
 const theme = {
   space: [0, 6, 12, 18, 24],
@@ -38,9 +39,9 @@ const IndexPage = () => (
             <br />
             <em style={{ fontStyle: 'normal' }}>&amp; Guided Practice</em>
           </Heading>
-          <AmazonButton style={{ fontSize: '1.2rem' }} />
+          <AmazonButton />
         </Box>
-        <Box width={[1, 1 / 3]}>
+        <Box width={[9 / 10, 1 / 3]}>
           <img
             style={{}}
             className="cover"
@@ -111,35 +112,34 @@ const IndexPage = () => (
           </h3>
         </Box>
       </Flex>
-      <PricingTable />
+      <PricingTable id="buy" />
       <hr />
       <TOC />
       <PricingTable />
 
-      <Flex id="author" my="4rem" flexWrap="wrap" flexDirection="row">
+      <Flex id="author" m="4rem 0 6rem" flexWrap="wrap" flexDirection="row">
         <Box width={[1, 1 / 3]}>
           <Image
+            p="1 2"
             className="cover"
             src={zacImg}
             alt="React Explained Book Cover"
             width={[1]}
           />
         </Box>
-        <Box width={[1, 2 / 3]} p="1rem">
+        <Box width={[1, 2 / 3]} p="1rem" fontSize={[2, 3]} mb="4">
           <Heading as="h2" fontSize={[3, 4, 5]}>
             About the Author
           </Heading>
-          <Text my="1rem" fontSize={[1, 3]} lineHeight={[1, 1.4]}>
+          <Text my="1rem">
             <a href="https://zacgordon.com/">Zac Gordon</a> is a professional
             educator, with a current focus on JavaScript development with and
             alongside WordPress at{' '}
             <a href="https://javascriptforwp.com">javascriptforwp.com</a>. Zac
             has years of experience teaching at high schools, colleges,
             bootcamps and online learning sites like Treehouse, Udemy and
-            Frontend Masters. In addition to teaching, Zac also runs Web Hosting
-            for Students, one of the world’s largest hosting companies dedicated
-            to students and teachers. You can also catch his free Office Yoga
-            sessions on <a href="https://OfficeYoga.tv">OfficeYoga.tv</a>.
+            Frontend Masters. Catch his free Office Yoga sessions on{' '}
+            <a href="https://OfficeYoga.tv">OfficeYoga.tv</a>.
           </Text>
           <Text>
             <a href="https://twitter.com/zgordon">Follow Zac on Twitter</a>.

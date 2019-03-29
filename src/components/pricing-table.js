@@ -14,94 +14,129 @@ class PricingTable extends Component {
   render() {
     return (
       <>
-        <Heading as="h2" fontSize={[3, 4, 5]} textAlign="center" my="2rem">
-          Get the Book
+        <Heading
+          id={this.props.id}
+          as="h2"
+          fontSize={[5]}
+          textAlign="center"
+          my="2rem"
+        >
+          Get React Explained
         </Heading>{' '}
-        <Card
+        <Flex
           flexWrap="wrap"
           flexDirection="row"
-          p="3rem"
           className="pricing-block"
-          // backgroundImage={`url(${bookBlur})`}
-          // backgroundSize="cover"
-          // backgroundPosition="bottom"
+          p="3rem"
           css={
             {
               // backgroundColor: '#FFF5A9',
-              // backgroundColor: colors.dark,
             }
           }
         >
-          {/* <Box
+          <Box
             width={[1, 1 / 3]}
-            p="1rem"
+            p="2rem 1rem 1rem"
             css={{
               backgroundColor: '#fff',
               border: '1px #ccc solid',
             }}
           >
             <Card>
-              <Heading as="h3" textAlign="center" mb="1rem">
-                Digital
+              <Heading as="h3" textAlign="center" mb=".5rem">
+                Digital Book
+              </Heading>
+              <Heading as="h4" textAlign="center" mb="1rem" fontWeight="normal">
+                $19
               </Heading>
               <Text my="1rem" fontSize={[1, 2]}>
-                Get all the standard digital formats for the book plus all the
-                example code.
+                Get this if you like to just read something to understand it and
+                can work through exercise files and projects on your own.
               </Text>
-              <Script url="https://gumroad.com/js/gumroad.js" />
               <a
-                rel="noopener noreferrer"
-                className="gumroad-button"
-                href="https://gum.co/HWuPe?wanted=true"
-                target="_blank"
+                href="https://reactexplained.podia.com/react-explained-book"
+                data-podia-embed="button"
+                data-text="Just the Book"
               >
-                Buy Now $14
+                Just the Book
               </a>
             </Card>
-          </Box> */}
+          </Box>
           <Box
-            width={[1, 1 / 2]}
-            my="-1rem"
-            p="1rem"
+            m={`-1rem 0`}
+            className="featured"
+            width={[1, 1 / 3]}
             css={{
               backgroundColor: '#fff',
-              // border: `5px ${colors.dark} solid`,
-              margin: `0 auto`,
+              border: `5px ${colors.dark} solid`,
             }}
           >
-            <Card>
-              <Heading as="h3" mb="1rem" textAlign="center">
-                Print &amp; Kindle Versions
+            <Card p={`2rem 1rem`}>
+              <Heading as="h3" mb=".5rem" textAlign="center">
+                Video Course &amp; Digital Book
+              </Heading>
+              <Heading as="h3" m="1rem 0" textAlign="center">
+                <span
+                  css={{
+                    textDecorationLine: 'line-through',
+                    fontWeight: 'normal',
+                  }}
+                >
+                  $79
+                </span>{' '}
+                $59
               </Heading>
               <Text my="1rem" fontSize={[1, 2]}>
-                Both the paperback, print version of the book and the Kindle
-                version are available via the link below on Amazon.
+                This is the way I suggest most people learn React Explained.
               </Text>
-              <AmazonButton style={{ margin: `0 auto`, display: 'block' }} />
+              <Text my="1rem" fontSize={[1, 2]}>
+                Get the book for reference and the videos explaining how it all
+                fits together plus more.
+              </Text>
+              <a
+                href="https://reactexplained.podia.com/react-explained-bundle"
+                data-podia-embed="button"
+                data-text="Get the Bundle"
+              >
+                Book & Video Bundle
+              </a>
+              {/* <AmazonButton style={{ margin: `0 auto`, display: 'block' }} /> */}
             </Card>
           </Box>
-          {/* <Box
+          <Box
             width={[1, 1 / 3]}
-            p="1rem"
+            p="2rem 1rem 1rem"
             css={{
               backgroundColor: '#fff',
               border: '1px #ccc solid',
             }}
           >
             <Card>
-              <Heading as="h3" mb="1rem" textAlign="center">
-                Videos
+              <Heading as="h3" mb=".5rem" textAlign="center">
+                Print Book
+              </Heading>
+              <Heading as="h3" mb="1rem" textAlign="center" fontWeight="normal">
+                $25.95
               </Heading>
               <Text my="1rem" fontSize={[1, 2]}>
-                Get videos of Zac walking through all the exercises and building
-                out the project.
+                Get the print version of the book for healthier reading.
               </Text>
               <Text my="1rem" fontSize={[1, 2]}>
-                Coming Soon.
+                Includes access to the exercise files and project repo.
               </Text>
+              <a
+                css={{
+                  color: colors.dark,
+                  textAlign: 'center',
+                  display: 'block',
+                }}
+                href="https://www.amazon.com/React-Explained-Step-Step-Guide/dp/1798752980"
+              >
+                Get on Amazon
+              </a>
             </Card>
-          </Box> */}
-        </Card>
+          </Box>
+        </Flex>
       </>
     )
   }

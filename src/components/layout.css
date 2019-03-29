@@ -642,4 +642,11 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+  div.featured {
+    margin: 2rem 0;
+  }
+  div.step {
+    margin:  0;
+    padding: 0;
+  }
 }

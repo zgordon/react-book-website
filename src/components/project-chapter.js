@@ -3,17 +3,30 @@ import React from 'react'
 import { Heading } from 'rebass'
 
 const ProjectChapter = ({ number, title }) => (
-  <Heading as="h4" fontSize={[1, 2]} mb="1rem" css={{ fontWeight: 'normal' }}>
-    <span
-      css={{
-        fontWeight: 'bold',
-      }}
+  <>
+    <Heading
+      as="h4"
+      fontSize={[1, 2]}
+      mb=".5rem"
+      css={{ fontWeight: 'normal' }}
     >
-      {number}
-    </span>
-    <br />
-    {title}
-  </Heading>
+      <span
+        css={{
+          fontWeight: 'bold',
+        }}
+      >
+        {number}
+      </span>
+    </Heading>
+    <Heading
+      as="h4"
+      fontSize={[1, 2]}
+      mb="1.5rem"
+      css={{ fontWeight: 'normal' }}
+    >
+      {title}
+    </Heading>
+  </>
 )
 
 export default ProjectChapter

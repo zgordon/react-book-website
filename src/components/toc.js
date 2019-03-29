@@ -210,16 +210,16 @@ const TOC = props => (
       my="1rem"
       justifyContent="center"
     >
-      <Card width={[1 / 5]} p="1rem">
+      <Card width={[1 / 2, 1 / 5]} p="1rem">
         <Image src={reactLogo} css={{ display: 'block' }} />
       </Card>
-      <Card width={[1 / 5]} p="1rem">
+      <Card width={[1 / 2, 1 / 5]} p="1rem">
         <Image src={reactRouterLogo} css={{ display: 'block' }} />
       </Card>
-      <Card width={[1 / 5]} p="1rem">
+      <Card width={[1 / 2, 1 / 5]} p="1rem">
         <Image src={firebaseLogo} css={{ display: 'block' }} />
       </Card>
-      <Card width={[1 / 5]} p="1rem">
+      <Card width={[1 / 2, 1 / 5]} p="1rem">
         <Image src={netlifyLogo} css={{ display: 'block' }} />
       </Card>
     </Flex>
@@ -227,25 +227,26 @@ const TOC = props => (
       id="how-you-will-learn"
       flexWrap="wrap"
       flexDirection="row"
+      className="briukH"
       css={{ boxShadow: '0 0 8px rgba(0, 0, 0, .25)' }}
       mb="6rem"
     >
       <Box width={[1, 1 / 3]}>
-        <Card m="1" p="2rem">
+        <Card m="1" p="2rem 1rem" className="step">
           {chapters.part3.section1.map(chapter => (
             <ProjectChapter {...chapter} />
           ))}
         </Card>
       </Box>
       <Box width={[1, 1 / 3]}>
-        <Card m="1" p="2rem">
+        <Card m="1" p="2rem 1rem" className="step">
           {chapters.part3.section2.map(chapter => (
             <ProjectChapter {...chapter} />
           ))}
         </Card>
       </Box>
       <Box width={[1, 1 / 3]}>
-        <Card m="1" p="2rem">
+        <Card m="1" p="2rem 1rem" className="step">
           {chapters.part3.section3.map(chapter => (
             <ProjectChapter {...chapter} />
           ))}

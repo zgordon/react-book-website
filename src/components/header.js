@@ -24,18 +24,21 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}{' '}
-          <span
-            style={{
-              marginTop: '1rem',
-              display: 'block',
-              fontWeight: 'normal',
-              fontSize: '1rem',
-              verticalAlign: 'middle',
-            }}
-          >
-            A Book from Educator Zac Gordon
-          </span>
         </Link>
+        <a
+          style={{
+            color: 'white',
+            marginTop: '1rem',
+            display: 'block',
+            fontWeight: 'normal',
+            fontSize: '1rem',
+            verticalAlign: 'middle',
+            textDecoration: 'none',
+          }}
+          href="https://twitter.com/zgordon"
+        >
+          From Educator Zac Gordon
+        </a>
       </h1>
     </div>
   </div>

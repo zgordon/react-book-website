@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+// import Button from './components/button'
 
 const AmazonButton = styled.a`
   display: block;
@@ -8,7 +9,8 @@ const AmazonButton = styled.a`
   text-decoration: none;
   padding: 1rem;
   max-width: 260px;
-  margin-bottom: 2rem;
+  font-weight: bold;
+  margin-bottom: 6rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -17,8 +19,14 @@ const AmazonButton = styled.a`
 export default ({ style }) => (
   <AmazonButton
     style={style}
-    href="https://www.amazon.com/React-Explained-Step-Step-Guide/dp/1798752980"
+    // href="https://www.amazon.com/React-Explained-Step-Step-Guide/dp/1798752980"
+    href="#buy"
   >
-    Buy on Amazon
+    Get React Explained
   </AmazonButton>
 )
+
+// export default () => (
+//   <a href="#buy" className={'button'}>
+//   </a>
+// )
