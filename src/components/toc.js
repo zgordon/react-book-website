@@ -155,7 +155,7 @@ const TOC = props => (
     </Text>
     <Flex flexWrap="wrap" flexDirection="row">
       {chapters.part1.map(chapter => (
-        <Chapter {...chapter} />
+        <Chapter key={chapter.number} {...chapter} />
       ))}
     </Flex>
     <Heading as="h3" mt="6rem" mb="2rem" fontSize={[3, 4]} textAlign="center">
@@ -179,7 +179,7 @@ const TOC = props => (
     </Text>
     <Flex flexWrap="wrap" flexDirection="row">
       {chapters.part2.map(chapter => (
-        <Chapter {...chapter} />
+        <Chapter key={chapter.number} {...chapter} />
       ))}
     </Flex>
     <Box />
@@ -234,21 +234,21 @@ const TOC = props => (
       <Box width={[1, 1 / 3]}>
         <Card m="1" p="2rem 1rem" className="step">
           {chapters.part3.section1.map(chapter => (
-            <ProjectChapter {...chapter} />
+            <ProjectChapter key={chapter.number} {...chapter} />
           ))}
         </Card>
       </Box>
       <Box width={[1, 1 / 3]}>
         <Card m="1" p="2rem 1rem" className="step">
           {chapters.part3.section2.map(chapter => (
-            <ProjectChapter {...chapter} />
+            <ProjectChapter key={chapter.number} {...chapter} />
           ))}
         </Card>
       </Box>
       <Box width={[1, 1 / 3]}>
         <Card m="1" p="2rem 1rem" className="step">
           {chapters.part3.section3.map(chapter => (
-            <ProjectChapter {...chapter} />
+            <ProjectChapter key={chapter.number} {...chapter} />
           ))}
         </Card>
       </Box>

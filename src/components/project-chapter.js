@@ -3,7 +3,7 @@ import React from 'react'
 import { Heading } from 'rebass'
 
 const ProjectChapter = ({ number, title }) => (
-  <>
+  <React.Fragment>
     <Heading
       as="h4"
       fontSize={[1, 2]}
@@ -26,7 +26,7 @@ const ProjectChapter = ({ number, title }) => (
     >
       {title}
     </Heading>
-  </>
+  </React.Fragment>
 )
 
 export default ProjectChapter

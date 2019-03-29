@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Flex, Box } from '@rebass/grid'
 import { Card, Heading, Text } from 'rebass'
-import AmazonButton from './AmazonButton'
-import bookBlur from '../images/book-blur.png'
 
 const colors = {
   dark: '#363A45',

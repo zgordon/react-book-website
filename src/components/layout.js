@@ -40,13 +40,13 @@ const Layout = ({ children }) => (
           //       'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
           //   },
           // ]}
-          script={[
-            {
-              src: 'https://cdn.podia.com/embeds.js',
-              type: 'text/javascript',
-              async: 'async',
-            },
-          ]}
+          // script={[
+          //   {
+          //     src: 'https://cdn.podia.com/embeds.js',
+          //     type: 'text/javascript',
+          //     async: 'async',
+          //   },
+          // ]}
         >
           <html lang="en" />
         </Helmet>
