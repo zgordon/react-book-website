@@ -137,12 +137,13 @@ const IndexPage = () => (
           </Heading>
           <Text my="1rem">
             <a href="https://zacgordon.com/">Zac Gordon</a> is a professional
-            educator, with a current focus on JavaScript development with and
-            alongside WordPress at{' '}
-            <a href="https://javascriptforwp.com">javascriptforwp.com</a>. Zac
-            has years of experience teaching at high schools, colleges,
-            bootcamps and online learning sites like Treehouse, Udemy and
-            Frontend Masters. Catch his free Office Yoga sessions on{' '}
+            educator, with a current focus on{' '}
+            <a href="https://javascriptforwp.com">
+              JavaScript for WordPress education
+            </a>
+            . Zac has years of experience teaching at high schools, colleges,
+            bootcamps and online learning sites like Frontend Masters and
+            Treehouse. Catch his free Office Yoga sessions on{' '}
             <a href="https://OfficeYoga.tv">OfficeYoga.tv</a>.
           </Text>
         </Box>
