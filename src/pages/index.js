@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
-import { Heading, Image, Text } from 'rebass'
+import { Heading, Card, Image, Text } from 'rebass'
 import Layout from '../components/layout'
 import coverImg from '../images/cover.jpg'
 import plusImg from '../images/plus.png'
@@ -10,10 +10,14 @@ import zacImg from '../images/zac-cropped.jpg'
 import PricingTable from '../components/pricing-table'
 import TOC from '../components/toc'
 // import AmazonButton from '../components/AmazonButton'
-
 import './index.css'
 import AmazonButton from '../components/AmazonButton'
 
+const colors = {
+  dark: '#363A45',
+  grey: '#CCC',
+  bright: '#6FE1FC',
+}
 const theme = {
   space: [0, 6, 12, 18, 24],
   breakpoints: ['32em', '48em', '64em'],
@@ -117,17 +121,17 @@ const IndexPage = () => (
       <TOC />
       <PricingTable />
 
-      <Flex id="author" m="4rem 0 6rem" flexWrap="wrap" flexDirection="row">
-        <Box width={[1, 1 / 3]}>
+      <Card className="briukH" m="4rem auto" width={[1, 2 / 3]}>
+        <Box width={[1]}>
           <Image
-            p="1 2"
+            p="1"
             className="cover"
             src={zacImg}
             alt="React Explained Book Cover"
             width={[1]}
           />
         </Box>
-        <Box width={[1, 2 / 3]} p="1rem" fontSize={[2, 3]} mb="4">
+        <Box width={[1]} p="1rem" fontSize={[2]} mb="4">
           <Heading as="h2" fontSize={[3, 4, 5]}>
             About the Author
           </Heading>
@@ -141,11 +145,13 @@ const IndexPage = () => (
             Frontend Masters. Catch his free Office Yoga sessions on{' '}
             <a href="https://OfficeYoga.tv">OfficeYoga.tv</a>.
           </Text>
-          <Text>
-            <a href="https://twitter.com/zgordon">Follow Zac on Twitter</a>.
-          </Text>
         </Box>
-      </Flex>
+      </Card>
+      <Text textAlign="center" my="4">
+        <a css={{ color: colors.dark }} href="https://twitter.com/zgordon">
+          Follow Zac on Twitter
+        </a>
+      </Text>
     </Layout>
   </ThemeProvider>
 )

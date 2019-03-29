@@ -2,11 +2,20 @@ import React, { Component } from 'react'
 import { Flex, Box } from '@rebass/grid'
 import { Card, Heading, Text } from 'rebass'
 
+import styled from 'styled-components'
+
 const colors = {
   dark: '#363A45',
   grey: '#CCC',
   bright: '#6FE1FC',
 }
+
+const BuyLink = styled.a`
+  color: ${colors.dark};
+  text-align: center;
+  display: block;
+  font-size: 0.9rem;
+`
 
 class PricingTable extends Component {
   render() {
@@ -51,14 +60,13 @@ class PricingTable extends Component {
                 Get this if you like to just read something to understand it and
                 can work through exercise files and projects on your own.
               </Text>
-              <a
-                className="podia-button"
+              <BuyLink
                 href="https://reactexplained.podia.com/react-explained-book"
                 data-podia-embed="button"
                 data-text="Just the Book"
               >
                 Just the Book
-              </a>
+              </BuyLink>
             </Card>
           </Box>
           <Box
@@ -92,14 +100,13 @@ class PricingTable extends Component {
                 Get the book for reference and the videos explaining how it all
                 fits together plus more.
               </Text>
-              <a
-                className="podia-button"
+              <BuyLink
                 href="https://reactexplained.podia.com/react-explained-bundle"
                 data-podia-embed="button"
                 data-text="Get the Bundle"
               >
-                Book & Video Bundle
-              </a>
+                Get the Bundle
+              </BuyLink>
               {/* <AmazonButton style={{ margin: `0 auto`, display: 'block' }} /> */}
             </Card>
           </Box>
@@ -116,7 +123,7 @@ class PricingTable extends Component {
                 Print Book
               </Heading>
               <Heading as="h3" mb="1rem" textAlign="center" fontWeight="normal">
-                $25.95
+                $25
               </Heading>
               <Text my="1rem" fontSize={[1, 2]}>
                 Get the print version of the book for healthier reading.
@@ -124,16 +131,9 @@ class PricingTable extends Component {
               <Text my="1rem" fontSize={[1, 2]}>
                 Includes access to the exercise files and project repo.
               </Text>
-              <a
-                css={{
-                  color: colors.dark,
-                  textAlign: 'center',
-                  display: 'block',
-                }}
-                href="https://www.amazon.com/React-Explained-Step-Step-Guide/dp/1798752980"
-              >
+              <BuyLink href="https://www.amazon.com/React-Explained-Step-Step-Guide/dp/1798752980">
                 Get on Amazon
-              </a>
+              </BuyLink>
             </Card>
           </Box>
         </Flex>
