@@ -52,6 +52,7 @@ class PricingTable extends Component {
                 can work through exercise files and projects on your own.
               </Text>
               <a
+                className="podia-button"
                 href="https://reactexplained.podia.com/react-explained-book"
                 data-podia-embed="button"
                 data-text="Just the Book"
@@ -92,6 +93,7 @@ class PricingTable extends Component {
                 fits together plus more.
               </Text>
               <a
+                className="podia-button"
                 href="https://reactexplained.podia.com/react-explained-bundle"
                 data-podia-embed="button"
                 data-text="Get the Bundle"
