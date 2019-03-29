@@ -44,6 +44,7 @@ const Layout = ({ children }) => (
             {
               src: 'https://cdn.podia.com/embeds.js',
               type: 'text/javascript',
+              async: 'async',
             },
           ]}
         >
