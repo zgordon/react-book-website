@@ -13,7 +13,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          <script src="https://cdn.podia.com/embeds.js" async="async" />
+          <script defer src="https://cdn.podia.com/embeds.js" async="async" />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
