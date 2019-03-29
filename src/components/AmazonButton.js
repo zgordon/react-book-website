@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const AmazonButton = styled.a`
   display: block;
-  background-color: #101114;
+  background-color: #363a44;
   color: #fff;
   text-decoration: none;
   padding: 1rem;
