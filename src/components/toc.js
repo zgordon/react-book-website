@@ -57,19 +57,20 @@ const chapters = {
       number: `10 \\ 11`,
       title: 'React Props Explained',
       description:
-        'This section takes us through the tooling stack we will use to work with React. We explore how to set up and use Create React App and the various commands it comes with. This will allow us to easily spin up and manage React projects.',
+        'Here we learn how data is passed through components using props. Props are similar to parameters passed to a function or attributes attached to markup. They also enforce the one way  data flow in React.',
     },
     {
       number: `12 \\ 13`,
-      title: 'React Props Explained',
+
+      title: 'State in React Explained',
       description:
-        'This section takes us through the tooling stack we will use to work with React. We explore how to set up and use Create React App and the various commands it comes with. This will allow us to easily spin up and manage React projects.',
+        'This demonstrates how we can manage data that changes in our code that we need to keep track of. We look at how to set and update state, as well as how to pass it down into other components via props.',
     },
     {
       number: `14 \\ 15`,
-      title: 'React Props Explained',
+      title: 'The Component Lifecycle',
       description:
-        'This demonstrates how we can manage data that changes in our code that we need to keep track of. We look at how to set and update state, as well as how to pass it down into other components via props.',
+        'This section goes over how we can hook in custom code at different points when our app or components are running. This gives us a fine grain control of when and how our code should execute and lets us do things like work with asynchronous API requests or improve performance by controlling when things should update.',
     },
   ],
   part3: {
