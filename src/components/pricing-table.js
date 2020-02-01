@@ -61,7 +61,7 @@ class PricingTable extends Component {
                 can work through exercise files and projects on your own.
               </Text>
               <BuyLink
-                href="https://javascriptforwp.com/?add-to-cart=103016"
+                href="https://javascriptforwp.com/checkout/?add-to-cart=103016"
               >
                 Just the Book
               </BuyLink>
@@ -99,7 +99,7 @@ class PricingTable extends Component {
                 fits together plus more.
               </Text>
               <BuyLink
-                href="https://javascriptforwp.com/?add-to-cart=103025"
+                href="https://javascriptforwp.com/checkout/?add-to-cart=103025"
               >
                 Get the Bundle
               </BuyLink>
